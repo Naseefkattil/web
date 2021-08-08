@@ -181,6 +181,9 @@ footer .cont-foot{
     display: flex;
     justify-content: center;
 }
+footer  .right{
+    margin-bottom: 30px;
+}
 .gly{
     background-color: #353535;
  
@@ -263,8 +266,11 @@ footer .cont-foot{
     #spotlight{
         margin-top: 80px;
     }
+    #about{
+        margin: 0 auto;
+    }
     #about div.container{
-        width: 60%;
+        width: 70%;
     }
     .gallery div.gly-cont{
         width: 30%;
@@ -273,6 +279,9 @@ footer .cont-foot{
         font-size: 18px
     }
     footer{
+        flex-direction: column;
+    }
+    footer .cont-foot{
         flex-direction: column;
     }
     footer div.left ul{
