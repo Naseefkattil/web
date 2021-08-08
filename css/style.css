@@ -209,8 +209,7 @@ footer  .right{
     }
 }
 .photo{
-    padding: 50px 0;
-    height: 100vh;
+    
     
 }
 .photo ul{
@@ -350,14 +349,13 @@ footer  .right{
     .photo ul li img{
     width: 130px;
     }
-}
-.photo ul li img.hei{
-    height: 86%;
-}
-header img{
-    width: 22%;
-}
 
+    .photo ul li img.hei{
+        height: 86%;
+    }
+    header img{
+        width: 22%;
+    }
 
 }
 @media all and (max-width:360px){
