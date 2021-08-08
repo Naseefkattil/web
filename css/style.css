@@ -354,6 +354,9 @@ footer  .right{
 .photo ul li img.hei{
     height: 86%;
 }
+header img{
+    width: 22%;
+}
 
 
 }
