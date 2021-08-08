@@ -1,0 +1,467 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.home{
+    height: 100vh;
+    background-color: #666666;
+    background-image: url(../images/pic9.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+header {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header img{
+    filter: invert(1);
+    width: 10%;
+    top: 0%;
+}
+#spotlight{
+    text-align: center;
+    margin-top: 150px;
+    font-size: 30px;
+}
+#spotlight h1{
+    color: #fff;
+
+}
+#spotlight span{
+    display: block;
+    font-style: italic;
+    
+}
+#spotlight small{
+    color: rgb(202 202 202);
+    border-bottom: 1px solid rgb(202 202 202);
+    padding-bottom: 10px;
+}
+#about{
+ background-color: #353535;
+ text-align: center;
+ top: 50px;
+ padding: 50px 30px;
+}
+#about h1{
+    font-size: 30px;
+    color: #fff;
+    margin-bottom: 30px;
+    font-weight: 400;
+}
+#about div.container{
+    padding: 50px;
+    margin: 0 auto;
+    background-color: #4e4e4e;
+    width: 40%;
+    border-radius: 40px;
+}
+#about div.top img{
+    width: 90px;
+    max-width: 200px;
+    border-radius: 30px;
+}
+#about div.top h2{
+    color: #fff;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-style: italic;
+}
+#about div.container p{
+    color: #fff;
+    margin-top:20px;
+    line-height:2em;
+    letter-spacing: 1px;
+    text-align: center;
+    width: 70%;
+    margin: 0 auto;
+}
+#about div.container p small{
+    font-size: 30px;
+}
+.gallery{
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #353535;
+}
+.gallery h1{
+    color: #fff;
+    margin-bottom: 20px;
+}
+.gallery div.gly-cont{
+    padding: 30px 20px;
+    background-color: #696969;
+    height: 80%;
+    width: 13%;
+    margin: 0 auto;
+    border-radius: 20px;
+    font-size:18px;
+    font-weight: 500;
+
+} 
+.gallery .button{
+    color: #fff;
+    text-decoration: none;
+}
+.gly-cont{
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+}
+.gly-cont a.button{
+    margin-left: 30px;
+}
+.gly-cont img{
+    width: 40px;
+    margin: 0 auto;
+}
+.photo ul li img:hover{
+    transition: s ease-in;
+    transform: rotate(10deg);
+}
+footer{
+    background-color: rgb(204, 204, 204);
+    padding: 30px 150px;
+    text-align: center;
+    
+
+}
+footer div.left{
+    margin-top: 30px;
+}
+footer div.left ul li i{
+    margin-right: 10px;
+}
+footer div.left ul li i.fas {
+    transform: rotate(90deg);
+}
+footer div.left ul{
+    list-style: none;
+   
+}
+footer div.left ul li{
+    margin-right: 30px;
+    margin-bottom: 20px;
+}
+footer div.left ul li a{
+    font-size: 18px;
+    color: #000;
+    text-decoration: none;
+}
+footer div.center{
+   text-align: center;
+}
+footer div.center img{
+    width: 25%;
+}
+footer div.right{
+    margin-top: 50px;
+}
+footer div.right ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+footer div.right ul li{
+    margin-right: 30px;
+}
+footer div.right ul li a{
+    font-size: 25px;
+    text-decoration: none;
+    color: #000;
+}
+footer .cont-foot{
+    display: flex;
+    justify-content: center;
+}
+.gly{
+    background-color: #353535;
+ 
+    width: 100%;
+}
+.gly header{
+    padding: 0 100px;
+    display: flex;
+}
+.gly header h1{
+    animation: loader 1s alternate;
+}
+.gly header h1 a{
+    color: #fff;
+    
+}
+@keyframes loader {
+    0%,50%{
+        transform: rotate(10deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.photo{
+    padding: 50px 0;
+    height: 100vh;
+    
+}
+.photo ul{
+ display: flex;
+ justify-content: center;
+ list-style: none;
+ flex-wrap: wrap;
+ width: 80%;
+ margin: 0 auto;
+}
+.photo ul li{
+    margin-right: 10px;
+}
+.photo ul li .hei{
+    height: 100%;
+}
+.photo ul li img{
+    width:200px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+}
+@media all and (max-width:1280px){
+    #spotlight{
+        margin-top: 100px;
+    }
+    .gallery div.gly-cont{
+        width: 20%;
+    }
+
+}
+@media all and (max-width:980px){
+    .gallery div.gly-cont{
+        width: 25%;
+    }
+    footer div.left{
+        margin-top: 0;
+    }
+    footer div.right{
+        margin-top: 20px;
+    }
+    footer div.left ul li a{
+        display: flex;
+    }
+    .gly header h1 a{
+        font-size: 25px;
+    }
+    .photo ul li img{
+        width: 180px;
+    }
+}
+@media all and (max-width:768px){
+    #spotlight{
+        margin-top: 80px;
+    }
+    #about div.container{
+        width: 60%;
+    }
+    .gallery div.gly-cont{
+        width: 30%;
+    }
+    .gly-cont a.button{
+        font-size: 18px
+    }
+    footer{
+        flex-direction: column;
+    }
+    footer div.left ul{
+        justify-content: center;
+        display: flex;
+    }
+}
+@media all and (max-width:640px){
+    #spotlight h1{
+        font-size: 30px;
+    }
+    #spotlight small{
+        font-size: 20px;
+    }
+    #about div.container p{
+        font-size: 14px;
+    }
+    .gallery div.gly-cont{
+        width: 30%;
+    }
+    .gly-cont a.button{
+        font-size: 12px;
+    }
+    footer div.left ul li a{
+        font-size: 10px;
+    }
+    .fab{
+        font-size: 14px;
+    }
+    .photo ul li img{
+        width: 150px;
+    }
+}
+@media all and (max-width:480px){
+    header img{
+        width: 15%;
+    }
+    #about h1{
+        font-size: 20px;
+    }
+    #about div.top img{
+        width: 70px;
+    }
+    #about div.top h2{
+        font-size: 20px;
+    }
+    #about div.container p{
+        font-size: 10px;
+    }
+    .gallery h1{
+        font-size: 20px;
+    }
+    .gallery div.gly-cont{
+        width: 40%;
+        padding: 20px 30px;
+    }.gly-cont img{
+        width: 30px;
+    }
+    footer{
+        padding: 30px 30px;
+
+    }
+    footer div.left{
+        width: 100%;
+    }
+    .photo ul li img{
+    width: 130px;
+    }
+}
+.photo ul li img.hei{
+    height: 86%;
+}
+
+
+}
+@media all and (max-width:360px){
+    header img{
+        width: 20%;
+    }
+    #about h1{
+        font-size: 15px;
+    }
+    #about div.top img{
+        width: 50px;
+    }
+    #about div.container{
+        padding: 20px;
+        width: 80%;
+    }
+    #about div.top h2{
+        font-size: 14px;
+    }
+    #about div.container p{
+        font-size: 8px;
+    }
+    #about{
+        padding: 20px 30px;
+    }
+    .gallery h1{
+        font-size: 14px;
+    }
+    .gly-cont a.button{
+        font-size: 9px;
+    }
+    .gly-cont img{
+        width: 20px;
+    }
+
+    .photo ul li img{
+    width: 100px;
+    }
+    .photo ul li img.hei{
+    height: 84%;
+    }
+    .gly header h1 a{
+        font-size: 20px;
+    }
+}
+@media all and (max-width:320px){
+    #spotlight h1{
+        font-size: 20px;
+    }#spotlight small{
+        font-size: 10px;
+    }
+    .gly-cont a.button{
+        font-size: 8px;
+    }
+    .gly-cont img{
+        width: 15px;
+    }
+    footer div.left ul li a{
+        font-size: 8px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
